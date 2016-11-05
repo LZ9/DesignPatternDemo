@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/num_one_edit_text"
+        android:layout_width="match_parent"
+        android:hint="@string/num_one"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/num_two_edit_text"
+        android:layout_width="match_parent"
+        android:hint="@string/num_two"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/operation_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operation_add" />
+
+    <Button
+        android:id="@+id/operation_subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operation_subtract" />
+
+    <Button
+        android:id="@+id/operation_multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operation_multiply" />
+
+    <Button
+        android:id="@+id/operation_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operation_divide" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/result"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+
+</LinearLayout>

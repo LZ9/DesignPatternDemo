@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">DesignPatternDemo</string>
+
+    <string name="factory_method_pattern">简单工厂模式</string>
+    <string name="strategy_pattern">策略模式</string>
+
+    <!-- 简单工厂模式 -->
+    <string name="operation_add">加法</string>
+    <string name="operation_subtract">减法</string>
+    <string name="operation_multiply">乘法</string>
+    <string name="operation_divide">除法</string>
+    <string name="result">运算结果：%s</string>
+    <string name="operation_type_error">无该运算类型</string>
+    <string name="num_one">第一位数</string>
+    <string name="num_two">第二位数</string>
+
 </resources>
