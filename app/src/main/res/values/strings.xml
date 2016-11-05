@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DesignPatternDemo</string>
+
+    <string name="factory_method_pattern">简单工厂模式</string>
+    <string name="strategy_pattern">策略模式</string>
+
+
 </resources>
