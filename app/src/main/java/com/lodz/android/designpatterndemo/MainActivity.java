@@ -12,9 +12,11 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity {
 
+    /** 简单工厂模式 */
     @BindView(R.id.factory_method_pattern_button)
     Button mFactoryMethodPatternButton;
 
+    /** 策略模式 */
     @BindView(R.id.strategy_pattern_button)
     Button mStrategyPatternButton;
 
