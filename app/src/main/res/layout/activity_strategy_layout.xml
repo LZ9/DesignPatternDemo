@@ -4,4 +4,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <Button
+        android:id="@+id/normal_price_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/normal_price" />
+
+    <Button
+        android:id="@+id/discount_price_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discount_price" />
+
+    <Button
+        android:id="@+id/return_price_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/return_price" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/price_result"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
 </LinearLayout>

@@ -9,9 +9,15 @@
     <string name="operation_subtract">减法</string>
     <string name="operation_multiply">乘法</string>
     <string name="operation_divide">除法</string>
-    <string name="result">运算结果：%s</string>
+    <string name="operation_result">运算结果：%s</string>
     <string name="operation_type_error">无该运算类型</string>
     <string name="num_one">第一位数</string>
     <string name="num_two">第二位数</string>
+
+    <!-- 策略模式 -->
+    <string name="normal_price">正常价格</string>
+    <string name="discount_price">打7折</string>
+    <string name="return_price">满100反30</string>
+    <string name="price_result">原价：%1$s，现价：%2$s</string>
 
 </resources>

@@ -66,67 +66,86 @@ public class FactoryMethodPatternActivity extends BaseActivity {
         mOperationAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Operation operation = OperationFactory.createOperation(OperationFactory.OPERATION_ADD);
-                if (operation == null){
-                    mResult.setText(getString(R.string.operation_type_error));
-                    return;
-                }
-                mNumTwoEditText.getText();
-                operation.setNumberOne(getNum(mNumOneEditText.getText().toString()));
-                operation.setNumberTwo(getNum(mNumTwoEditText.getText().toString()));
-                mResult.setText(getString(R.string.result, operation.getResult()+""));
+                operationAdd();
             }
         });
 
         mOperationSubtract.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Operation operation = OperationFactory.createOperation(OperationFactory.OPERATION_SUBTRACT);
-                if (operation == null){
-                    mResult.setText(getString(R.string.operation_type_error));
-                    return;
-                }
-                operation.setNumberOne(getNum(mNumOneEditText.getText().toString()));
-                operation.setNumberTwo(getNum(mNumTwoEditText.getText().toString()));
-                mResult.setText(getString(R.string.result, operation.getResult()+""));
+                operationSubtract();
             }
         });
 
         mOperationMultiply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Operation operation = OperationFactory.createOperation(OperationFactory.OPERATION_MULTIPLY);
-                if (operation == null){
-                    mResult.setText(getString(R.string.operation_type_error));
-                    return;
-                }
-                operation.setNumberOne(getNum(mNumOneEditText.getText().toString()));
-                operation.setNumberTwo(getNum(mNumTwoEditText.getText().toString()));
-                mResult.setText(getString(R.string.result, operation.getResult()+""));
+                operationMultiply();
             }
         });
 
         mOperationDivide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Operation operation = OperationFactory.createOperation(OperationFactory.OPERATION_DIVIDE);
-                if (operation == null){
-                    mResult.setText(getString(R.string.operation_type_error));
-                    return;
-                }
-                operation.setNumberOne(getNum(mNumOneEditText.getText().toString()));
-                operation.setNumberTwo(getNum(mNumTwoEditText.getText().toString()));
-                try {
-                    mResult.setText(getString(R.string.result, operation.getResult()+""));
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    mResult.setText("除数不能为零");
-                }
-
+                operationDivide();
             }
         });
     }
 
+    /** 加法运算 */
+    private void operationAdd() {
+        Operation operation = OperationFactory.createOperation(OperationFactory.OPERATION_ADD);
+        if (operation == null){
+            mResult.setText(getString(R.string.operation_type_error));
+            return;
+        }
+        mNumTwoEditText.getText();
+        operation.setNumberOne(getNum(mNumOneEditText.getText().toString()));
+        operation.setNumberTwo(getNum(mNumTwoEditText.getText().toString()));
+        mResult.setText(getString(R.string.operation_result, operation.getResult()+""));
+    }
+
+    /** 减法运算 */
+    private void operationSubtract() {
+        Operation operation = OperationFactory.createOperation(OperationFactory.OPERATION_SUBTRACT);
+        if (operation == null){
+            mResult.setText(getString(R.string.operation_type_error));
+            return;
+        }
+        operation.setNumberOne(getNum(mNumOneEditText.getText().toString()));
+        operation.setNumberTwo(getNum(mNumTwoEditText.getText().toString()));
+        mResult.setText(getString(R.string.operation_result, operation.getResult()+""));
+    }
+
+    private void operationMultiply() {
+        Operation operation = OperationFactory.createOperation(OperationFactory.OPERATION_MULTIPLY);
+        if (operation == null){
+            mResult.setText(getString(R.string.operation_type_error));
+            return;
+        }
+        operation.setNumberOne(getNum(mNumOneEditText.getText().toString()));
+        operation.setNumberTwo(getNum(mNumTwoEditText.getText().toString()));
+        mResult.setText(getString(R.string.operation_result, operation.getResult()+""));
+    }
+
+    /** 除法运算 */
+    private void operationDivide() {
+        Operation operation = OperationFactory.createOperation(OperationFactory.OPERATION_DIVIDE);
+        if (operation == null){
+            mResult.setText(getString(R.string.operation_type_error));
+            return;
+        }
+        operation.setNumberOne(getNum(mNumOneEditText.getText().toString()));
+        operation.setNumberTwo(getNum(mNumTwoEditText.getText().toString()));
+        try {
+            mResult.setText(getString(R.string.operation_result, operation.getResult()+""));
+        } catch (Exception e) {
+            e.printStackTrace();
+            mResult.setText("除数不能为零");
+        }
+    }
+
+    /** 获取用户输入的数字 */
     private float getNum(String num){
         if (TextUtils.isEmpty(num)){
             return 0f;
