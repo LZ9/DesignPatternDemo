@@ -4,6 +4,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.lodz.android.designpatterndemo.base.BaseActivity;
+import com.lodz.android.designpatterndemo.designpattern.decorator.DecoratorActivity;
 import com.lodz.android.designpatterndemo.designpattern.factorymethod.FactoryMethodPatternActivity;
 import com.lodz.android.designpatterndemo.designpattern.strategy.StrategyActivity;
 
@@ -19,6 +20,11 @@ public class MainActivity extends BaseActivity {
     /** 策略模式 */
     @BindView(R.id.strategy_pattern_button)
     Button mStrategyPatternButton;
+
+    /** 装饰者模式 */
+    @BindView(R.id.decorator_pattern_button)
+    Button mDecoratorPatternButton;
+
 
     @Override
     protected int getLayoutId() {
@@ -47,5 +53,11 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        mDecoratorPatternButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DecoratorActivity.start(MainActivity.this);
+            }
+        });
     }
 }

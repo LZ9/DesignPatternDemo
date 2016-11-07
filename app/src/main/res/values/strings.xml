@@ -3,6 +3,8 @@
 
     <string name="factory_method_pattern">简单工厂模式</string>
     <string name="strategy_pattern">策略模式</string>
+    <string name="decorator_pattern">装饰者模式</string>
+
 
     <!-- 简单工厂模式 -->
     <string name="operation_add">加法</string>
@@ -19,5 +21,13 @@
     <string name="discount_price">打7折</string>
     <string name="return_price">满100反30</string>
     <string name="price_result">原价：%1$s，现价：%2$s</string>
+
+    <!-- 装饰者模式 -->
+    <string name="chicken_burger">鸡腿堡</string>
+    <string name="chicken_burger_with_lettuce">鸡腿堡 + 生菜</string>
+    <string name="chicken_burger_with_chilli">鸡腿堡 + 辣椒</string>
+    <string name="chicken_burger_with_egg">鸡腿堡 + 煎蛋</string>
+    <string name="chicken_burger_with_lettuce_and_egg">鸡腿堡 + 生菜 + 煎蛋</string>
+    <string name="chicken_burger_with_lettuce_and_egg_chilli">鸡腿堡 + 生菜 + 煎蛋 + 辣椒</string>
 
 </resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/chicken_burger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chicken_burger" />
+
+    <Button
+        android:id="@+id/chicken_burger_with_lettuce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chicken_burger_with_lettuce" />
+
+    <Button
+        android:id="@+id/chicken_burger_with_chilli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chicken_burger_with_chilli" />
+
+    <Button
+        android:id="@+id/chicken_burger_with_egg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chicken_burger_with_egg" />
+
+    <Button
+        android:id="@+id/chicken_burger_with_lettuce_and_egg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chicken_burger_with_lettuce_and_egg" />
+
+    <Button
+        android:id="@+id/chicken_burger_with_lettuce_and_egg_chilli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chicken_burger_with_lettuce_and_egg_chilli" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>

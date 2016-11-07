@@ -22,6 +22,8 @@
         <activity android:name=".designpattern.strategy.StrategyActivity">
         </activity>
 
+        <activity android:name=".designpattern.decorator.DecoratorActivity">
+        </activity>
 
     </application>
 
