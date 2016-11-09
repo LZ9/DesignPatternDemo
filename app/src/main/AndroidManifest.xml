@@ -25,6 +25,13 @@
         <activity android:name=".designpattern.decorator.DecoratorActivity">
         </activity>
 
+        <activity android:name=".designpattern.proxy.staticproxy.StaticProxyActivity">
+        </activity>
+
+        <activity android:name=".designpattern.proxy.dynamicproxy.DynamicProxyActivity">
+        </activity>
+
+
     </application>
 
 </manifest>

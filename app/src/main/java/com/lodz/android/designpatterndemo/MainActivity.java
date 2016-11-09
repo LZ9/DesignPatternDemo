@@ -6,6 +6,8 @@ import android.widget.Button;
 import com.lodz.android.designpatterndemo.base.BaseActivity;
 import com.lodz.android.designpatterndemo.designpattern.decorator.DecoratorActivity;
 import com.lodz.android.designpatterndemo.designpattern.factorymethod.FactoryMethodPatternActivity;
+import com.lodz.android.designpatterndemo.designpattern.proxy.dynamicproxy.DynamicProxyActivity;
+import com.lodz.android.designpatterndemo.designpattern.proxy.staticproxy.StaticProxyActivity;
 import com.lodz.android.designpatterndemo.designpattern.strategy.StrategyActivity;
 
 import butterknife.BindView;
@@ -25,6 +27,13 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.decorator_pattern_button)
     Button mDecoratorPatternButton;
 
+    /** 静态代理模式 */
+    @BindView(R.id.static_proxy_pattern_button)
+    Button mStaticProxyPatternButton;
+
+    /** 动态代理模式 */
+    @BindView(R.id.dynamic_proxy_pattern_button)
+    Button mDynamicProxyPatternButton;
 
     @Override
     protected int getLayoutId() {
@@ -57,6 +66,20 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 DecoratorActivity.start(MainActivity.this);
+            }
+        });
+
+        mStaticProxyPatternButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                StaticProxyActivity.start(MainActivity.this);
+            }
+        });
+
+        mDynamicProxyPatternButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DynamicProxyActivity.start(MainActivity.this);
             }
         });
     }

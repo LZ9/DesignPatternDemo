@@ -4,6 +4,8 @@
     <string name="factory_method_pattern">简单工厂模式</string>
     <string name="strategy_pattern">策略模式</string>
     <string name="decorator_pattern">装饰者模式</string>
+    <string name="static_proxy_pattern">静态代理模式</string>
+    <string name="dynamic_proxy_pattern">动态代理模式</string>
 
 
     <!-- 简单工厂模式 -->
@@ -29,5 +31,11 @@
     <string name="chicken_burger_with_egg">鸡腿堡 + 煎蛋</string>
     <string name="chicken_burger_with_lettuce_and_egg">鸡腿堡 + 生菜 + 煎蛋</string>
     <string name="chicken_burger_with_lettuce_and_egg_chilli">鸡腿堡 + 生菜 + 煎蛋 + 辣椒</string>
+
+    <!-- 代理模式 -->
+    <string name="dynamic_proxy">动态代理</string>
+    <string name="buy_lotto">买彩票</string>
+    <string name="proxy_buy_lotto">代理买彩票</string>
+
 
 </resources>
