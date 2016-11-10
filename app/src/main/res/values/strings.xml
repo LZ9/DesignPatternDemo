@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">DesignPatternDemo</string>
 
-    <string name="factory_method_pattern">简单工厂模式</string>
+    <string name="simple_factory_pattern">简单工厂模式</string>
+    <string name="factory_method_pattern">工厂模式</string>
+    <string name="abstract_factory_pattern">抽象工厂模式</string>
     <string name="strategy_pattern">策略模式</string>
     <string name="decorator_pattern">装饰者模式</string>
     <string name="static_proxy_pattern">静态代理模式</string>

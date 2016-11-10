@@ -7,14 +7,16 @@
     <EditText
         android:id="@+id/num_one_edit_text"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="@string/num_one"
-        android:layout_height="wrap_content" />
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/num_two_edit_text"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="@string/num_two"
-        android:layout_height="wrap_content" />
+        android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/operation_add"

@@ -15,11 +15,25 @@
         android:textSize="22sp" />
 
     <Button
+        android:id="@+id/simple_factory_pattern_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/simple_factory_pattern" />
+
+    <Button
         android:id="@+id/factory_method_pattern_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="@string/factory_method_pattern" />
+
+    <Button
+        android:id="@+id/abstract_factory_pattern_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/abstract_factory_pattern" />
 
     <Button
         android:id="@+id/strategy_pattern_button"

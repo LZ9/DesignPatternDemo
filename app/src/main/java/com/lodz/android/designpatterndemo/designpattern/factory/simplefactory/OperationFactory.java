@@ -1,10 +1,10 @@
-package com.lodz.android.designpatterndemo.designpattern.factorymethod;
+package com.lodz.android.designpatterndemo.designpattern.factory.simplefactory;
 
-import com.lodz.android.designpatterndemo.designpattern.factorymethod.operation.Operation;
-import com.lodz.android.designpatterndemo.designpattern.factorymethod.operation.OperationAdd;
-import com.lodz.android.designpatterndemo.designpattern.factorymethod.operation.OperationDiv;
-import com.lodz.android.designpatterndemo.designpattern.factorymethod.operation.OperationMul;
-import com.lodz.android.designpatterndemo.designpattern.factorymethod.operation.OperationSub;
+import com.lodz.android.designpatterndemo.designpattern.factory.simplefactory.operation.Operation;
+import com.lodz.android.designpatterndemo.designpattern.factory.simplefactory.operation.OperationAdd;
+import com.lodz.android.designpatterndemo.designpattern.factory.simplefactory.operation.OperationDiv;
+import com.lodz.android.designpatterndemo.designpattern.factory.simplefactory.operation.OperationMul;
+import com.lodz.android.designpatterndemo.designpattern.factory.simplefactory.operation.OperationSub;
 
 /**
  * 计算工厂

@@ -1,4 +1,4 @@
-package com.lodz.android.designpatterndemo.designpattern.factorymethod;
+package com.lodz.android.designpatterndemo.designpattern.factory.simplefactory;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,17 +10,17 @@ import android.widget.TextView;
 
 import com.lodz.android.designpatterndemo.R;
 import com.lodz.android.designpatterndemo.base.BaseActivity;
-import com.lodz.android.designpatterndemo.designpattern.factorymethod.operation.Operation;
+import com.lodz.android.designpatterndemo.designpattern.factory.simplefactory.operation.Operation;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
  * 简单工厂模式
- * Created by zhouL on 2016/11/5.
+ * Created by zhouL on 2016/11/10.
  */
 
-public class FactoryMethodPatternActivity extends BaseActivity {
+public class SimpleFactoryActivity extends BaseActivity{
 
     /** 加法运算 */
     @BindView(R.id.operation_add)
@@ -46,13 +46,13 @@ public class FactoryMethodPatternActivity extends BaseActivity {
 
     public static void start(Context context){
         Intent intent = new Intent();
-        intent.setClass(context, FactoryMethodPatternActivity.class);
+        intent.setClass(context, SimpleFactoryActivity.class);
         context.startActivity(intent);
     }
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_factory_method_pattern_layout;
+        return R.layout.activity_simple_factory_layout;
     }
 
     @Override
@@ -157,5 +157,4 @@ public class FactoryMethodPatternActivity extends BaseActivity {
             return 0f;
         }
     }
-
 }

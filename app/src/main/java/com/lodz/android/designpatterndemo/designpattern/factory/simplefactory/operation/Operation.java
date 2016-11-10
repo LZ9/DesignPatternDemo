@@ -1,4 +1,4 @@
-package com.lodz.android.designpatterndemo.designpattern.factorymethod.operation;
+package com.lodz.android.designpatterndemo.designpattern.factory.simplefactory.operation;
 
 /**
  * 计算操作的抽象类

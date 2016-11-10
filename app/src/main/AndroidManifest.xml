@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".designpattern.factorymethod.FactoryMethodPatternActivity">
+        <activity android:name=".designpattern.factory.simplefactory.SimpleFactoryActivity">
         </activity>
 
         <activity android:name=".designpattern.strategy.StrategyActivity">

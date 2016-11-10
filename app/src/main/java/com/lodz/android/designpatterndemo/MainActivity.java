@@ -5,7 +5,7 @@ import android.widget.Button;
 
 import com.lodz.android.designpatterndemo.base.BaseActivity;
 import com.lodz.android.designpatterndemo.designpattern.decorator.DecoratorActivity;
-import com.lodz.android.designpatterndemo.designpattern.factorymethod.FactoryMethodPatternActivity;
+import com.lodz.android.designpatterndemo.designpattern.factory.simplefactory.SimpleFactoryActivity;
 import com.lodz.android.designpatterndemo.designpattern.proxy.dynamicproxy.DynamicProxyActivity;
 import com.lodz.android.designpatterndemo.designpattern.proxy.staticproxy.StaticProxyActivity;
 import com.lodz.android.designpatterndemo.designpattern.strategy.StrategyActivity;
@@ -16,8 +16,16 @@ import butterknife.ButterKnife;
 public class MainActivity extends BaseActivity {
 
     /** 简单工厂模式 */
+    @BindView(R.id.simple_factory_pattern_button)
+    Button mSimpleFactoryPatternButton;
+
+    /** 工厂模式 */
     @BindView(R.id.factory_method_pattern_button)
     Button mFactoryMethodPatternButton;
+
+    /** 抽象工厂模式 */
+    @BindView(R.id.abstract_factory_pattern_button)
+    Button mAbstractFactoryPatternButton;
 
     /** 策略模式 */
     @BindView(R.id.strategy_pattern_button)
@@ -48,10 +56,24 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void setListeners() {
         super.setListeners();
+        mSimpleFactoryPatternButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SimpleFactoryActivity.start(MainActivity.this);
+            }
+        });
+
         mFactoryMethodPatternButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FactoryMethodPatternActivity.start(MainActivity.this);
+
+            }
+        });
+
+        mAbstractFactoryPatternButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 
