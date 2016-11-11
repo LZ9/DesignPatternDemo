@@ -1,2 +1,19 @@
-# DesignPatternDemo
-Create design pattern demo
+# 设计模式
+这个Demo里包括了基础的设计模式样例，可以通过这些case更好的了解每种设计模式。
+
+持续更新中...
+
+### 1、简单工厂（factory.simplefactory）
+我采用了加减法运算的case来模拟简单工厂，通过传入运算类型标识符来创建对应的运算类
+### 2、工厂方法（factory.factorymethod）
+这里用一个创建不同汽车品牌的case来描述工厂方法，有新的汽车品牌则再新增对应的工厂类即可
+### 3、抽象工厂（factory.abstractfactory）
+更新中...
+### 4、策略模式（strategy）
+我用了对商品3种不同的价格计算方法（正常价格、打折价格、返现价格）来模拟策略模式
+### 5、装饰者模式（decorator）
+通过汉堡需要添加不同的配料来模拟装饰者模式，case中对装饰顺序没有做要求，通过添加配料来模拟装饰
+### 6、静态代理（proxy.staticproxy）
+通过抽象行为接口来模拟静态代理
+### 7、动态代理（proxy.dynamicproxy）
+通过InvocationHandler实现，相比较静态代理，在代理类里面不需要再去实现接口方法，减少了维护量
