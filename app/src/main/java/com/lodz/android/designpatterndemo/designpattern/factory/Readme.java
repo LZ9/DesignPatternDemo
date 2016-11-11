@@ -8,6 +8,8 @@ package com.lodz.android.designpatterndemo.designpattern.factory;
 public interface ReadMe {
 
     /**
+     * http://blog.csdn.net/superbeck/article/details/4446177
+     *
      * 1、简单工厂:简单工厂模式的工厂类一般是使用静态方法，通过接收的参数的不同来返回不同的对象实例。
      *  不修改代码的话，是无法扩展的。
      *

@@ -19,6 +19,9 @@
         <activity android:name=".designpattern.factory.simplefactory.SimpleFactoryActivity">
         </activity>
 
+        <activity android:name=".designpattern.factory.factorymethod.FactoryMethodActivity">
+        </activity>
+
         <activity android:name=".designpattern.strategy.StrategyActivity">
         </activity>
 

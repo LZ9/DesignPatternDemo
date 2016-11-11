@@ -2,6 +2,8 @@ package com.lodz.android.designpatterndemo.designpattern.proxy.staticproxy;
 
 import android.util.Log;
 
+import com.lodz.android.designpatterndemo.MainActivity;
+
 /**
  * 代理
  * Created by zhouL on 2016/11/9.
@@ -17,8 +19,8 @@ public class Proxy implements IAction{
 
     @Override
     public void doAction() {
-        Log.i(StaticProxyActivity.TAG, "--- 代理开始 ---");
+        Log.i(MainActivity.TAG, "--- 代理开始 ---");
         mIAction.doAction();
-        Log.i(StaticProxyActivity.TAG, "--- 代理结束 ---");
+        Log.i(MainActivity.TAG, "--- 代理结束 ---");
     }
 }

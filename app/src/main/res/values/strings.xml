@@ -10,7 +10,7 @@
     <string name="dynamic_proxy_pattern">动态代理模式</string>
 
 
-    <!-- 简单工厂模式 -->
+    <!-- 简单工厂 -->
     <string name="operation_add">加法</string>
     <string name="operation_subtract">减法</string>
     <string name="operation_multiply">乘法</string>
@@ -19,6 +19,10 @@
     <string name="operation_type_error">无该运算类型</string>
     <string name="num_one">第一位数</string>
     <string name="num_two">第二位数</string>
+
+    <!-- 工厂方法 -->
+    <string name="audi">奥迪</string>
+    <string name="ferrari">法拉利</string>
 
     <!-- 策略模式 -->
     <string name="normal_price">正常价格</string>

@@ -5,6 +5,7 @@ import android.widget.Button;
 
 import com.lodz.android.designpatterndemo.base.BaseActivity;
 import com.lodz.android.designpatterndemo.designpattern.decorator.DecoratorActivity;
+import com.lodz.android.designpatterndemo.designpattern.factory.factorymethod.FactoryMethodActivity;
 import com.lodz.android.designpatterndemo.designpattern.factory.simplefactory.SimpleFactoryActivity;
 import com.lodz.android.designpatterndemo.designpattern.proxy.dynamicproxy.DynamicProxyActivity;
 import com.lodz.android.designpatterndemo.designpattern.proxy.staticproxy.StaticProxyActivity;
@@ -14,6 +15,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity {
+
+    public final static String TAG = "MainActivity";
 
     /** 简单工厂模式 */
     @BindView(R.id.simple_factory_pattern_button)
@@ -66,7 +69,7 @@ public class MainActivity extends BaseActivity {
         mFactoryMethodPatternButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                FactoryMethodActivity.start(MainActivity.this);
             }
         });
 

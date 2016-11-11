@@ -2,6 +2,8 @@ package com.lodz.android.designpatterndemo.designpattern.proxy.dynamicproxy;
 
 import android.util.Log;
 
+import com.lodz.android.designpatterndemo.MainActivity;
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
@@ -21,9 +23,9 @@ public class ProxyInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        Log.i(DynamicProxyActivity.TAG, "----- 代理开始 -----");
+        Log.i(MainActivity.TAG, "----- 代理开始 -----");
         Object result = method.invoke(mTarget, args);
-        Log.i(DynamicProxyActivity.TAG, "----- 代理结束 -----");
+        Log.i(MainActivity.TAG, "----- 代理结束 -----");
         return result;
     }
 

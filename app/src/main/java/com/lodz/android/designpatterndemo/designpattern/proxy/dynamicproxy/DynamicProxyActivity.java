@@ -18,8 +18,6 @@ import butterknife.ButterKnife;
 
 public class DynamicProxyActivity extends BaseActivity{
 
-    public static final String TAG = "ProxyActivity";
-
     /** 代理按钮 */
     @BindView(R.id.proxy_button)
     Button mProxyButton;

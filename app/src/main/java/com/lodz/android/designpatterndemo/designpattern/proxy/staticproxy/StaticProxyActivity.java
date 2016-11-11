@@ -18,8 +18,6 @@ import butterknife.ButterKnife;
 
 public class StaticProxyActivity extends BaseActivity{
 
-    public static final String TAG = "ProxyActivity";
-
     /** 买彩票 */
     @BindView(R.id.action_button)
     Button mActionButton;
