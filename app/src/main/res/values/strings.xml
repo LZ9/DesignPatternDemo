@@ -9,7 +9,6 @@
     <string name="static_proxy_pattern">静态代理模式</string>
     <string name="dynamic_proxy_pattern">动态代理模式</string>
 
-
     <!-- 简单工厂 -->
     <string name="operation_add">加法</string>
     <string name="operation_subtract">减法</string>
@@ -23,6 +22,15 @@
     <!-- 工厂方法 -->
     <string name="audi">奥迪</string>
     <string name="ferrari">法拉利</string>
+
+    <!-- 简单工厂 -->
+    <string name="database_access">Access</string>
+    <string name="database_sqlserver">Sqlserver</string>
+    <string name="insert_user">向用户表插入一条记录</string>
+    <string name="query_user">查询用户表记录</string>
+    <string name="update_vip">更新VIP录信息</string>
+    <string name="delete_vip">删除VIP表信息</string>
+
 
     <!-- 策略模式 -->
     <string name="normal_price">正常价格</string>

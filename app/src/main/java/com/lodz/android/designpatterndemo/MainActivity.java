@@ -5,6 +5,7 @@ import android.widget.Button;
 
 import com.lodz.android.designpatterndemo.base.BaseActivity;
 import com.lodz.android.designpatterndemo.designpattern.decorator.DecoratorActivity;
+import com.lodz.android.designpatterndemo.designpattern.factory.abstractfactory.AbstractFactoryActivity;
 import com.lodz.android.designpatterndemo.designpattern.factory.factorymethod.FactoryMethodActivity;
 import com.lodz.android.designpatterndemo.designpattern.factory.simplefactory.SimpleFactoryActivity;
 import com.lodz.android.designpatterndemo.designpattern.proxy.dynamicproxy.DynamicProxyActivity;
@@ -76,7 +77,7 @@ public class MainActivity extends BaseActivity {
         mAbstractFactoryPatternButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                AbstractFactoryActivity.start(MainActivity.this);
             }
         });
 
