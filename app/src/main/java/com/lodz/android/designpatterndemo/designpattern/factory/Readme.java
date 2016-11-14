@@ -5,7 +5,7 @@ package com.lodz.android.designpatterndemo.designpattern.factory;
  * Created by zhouL on 2016/11/10.
  */
 
-public interface ReadMe {
+public interface Readme {
 
     /**
      * http://blog.csdn.net/superbeck/article/details/4446177
