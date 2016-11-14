@@ -17,6 +17,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity {
 
+
     public final static String TAG = "MainActivity";
 
     /** 简单工厂模式 */
