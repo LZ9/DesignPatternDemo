@@ -8,6 +8,7 @@
     <string name="decorator_pattern">装饰者模式</string>
     <string name="static_proxy_pattern">静态代理模式</string>
     <string name="dynamic_proxy_pattern">动态代理模式</string>
+    <string name="prototype_pattern">原型模式</string>
 
     <!-- 简单工厂 -->
     <string name="operation_add">加法</string>
@@ -51,5 +52,7 @@
     <string name="buy_lotto">买彩票</string>
     <string name="proxy_buy_lotto">代理买彩票</string>
 
+    <!-- 原型模式 -->
+    <string name="create_resume">生成简历</string>
 
 </resources>

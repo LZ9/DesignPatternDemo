@@ -8,6 +8,7 @@ import com.lodz.android.designpatterndemo.designpattern.decorator.DecoratorActiv
 import com.lodz.android.designpatterndemo.designpattern.factory.abstractfactory.AbstractFactoryActivity;
 import com.lodz.android.designpatterndemo.designpattern.factory.factorymethod.FactoryMethodActivity;
 import com.lodz.android.designpatterndemo.designpattern.factory.simplefactory.SimpleFactoryActivity;
+import com.lodz.android.designpatterndemo.designpattern.prototype.PrototypeActivity;
 import com.lodz.android.designpatterndemo.designpattern.proxy.dynamicproxy.DynamicProxyActivity;
 import com.lodz.android.designpatterndemo.designpattern.proxy.staticproxy.StaticProxyActivity;
 import com.lodz.android.designpatterndemo.designpattern.strategy.StrategyActivity;
@@ -16,7 +17,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity {
-
 
     public final static String TAG = "MainActivity";
 
@@ -47,6 +47,10 @@ public class MainActivity extends BaseActivity {
     /** 动态代理模式 */
     @BindView(R.id.dynamic_proxy_pattern_button)
     Button mDynamicProxyPatternButton;
+
+    /** 原型模式 */
+    @BindView(R.id.prototype_pattern_button)
+    Button mPrototypePatternButton;
 
     @Override
     protected int getLayoutId() {
@@ -107,6 +111,13 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 DynamicProxyActivity.start(MainActivity.this);
+            }
+        });
+
+        mPrototypePatternButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PrototypeActivity.start(MainActivity.this);
             }
         });
     }

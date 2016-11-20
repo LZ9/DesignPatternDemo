@@ -1,66 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="10dp"
-        android:text="@string/app_name"
-        android:textColor="@android:color/black"
-        android:textSize="22sp" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/simple_factory_pattern_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="@string/simple_factory_pattern" />
 
-    <Button
-        android:id="@+id/factory_method_pattern_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="@string/factory_method_pattern" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
 
-    <Button
-        android:id="@+id/abstract_factory_pattern_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="@string/abstract_factory_pattern" />
+        <Button
+            android:id="@+id/simple_factory_pattern_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/simple_factory_pattern" />
 
-    <Button
-        android:id="@+id/strategy_pattern_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="@string/strategy_pattern" />
+        <Button
+            android:id="@+id/factory_method_pattern_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/factory_method_pattern" />
 
-    <Button
-        android:id="@+id/decorator_pattern_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="@string/decorator_pattern" />
+        <Button
+            android:id="@+id/abstract_factory_pattern_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/abstract_factory_pattern" />
 
-    <Button
-        android:id="@+id/static_proxy_pattern_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="@string/static_proxy_pattern" />
+        <Button
+            android:id="@+id/strategy_pattern_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/strategy_pattern" />
 
-    <Button
-        android:id="@+id/dynamic_proxy_pattern_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="@string/dynamic_proxy_pattern" />
+        <Button
+            android:id="@+id/decorator_pattern_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/decorator_pattern" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/static_proxy_pattern_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/static_proxy_pattern" />
+
+        <Button
+            android:id="@+id/dynamic_proxy_pattern_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/dynamic_proxy_pattern" />
+
+        <Button
+            android:id="@+id/prototype_pattern_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/prototype_pattern" />
+
+    </LinearLayout>
+</ScrollView>
