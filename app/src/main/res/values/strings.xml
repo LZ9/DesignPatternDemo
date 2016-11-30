@@ -9,6 +9,7 @@
     <string name="static_proxy_pattern">静态代理模式</string>
     <string name="dynamic_proxy_pattern">动态代理模式</string>
     <string name="prototype_pattern">原型模式</string>
+    <string name="template_method_pattern">模版方法模式</string>
 
     <!-- 简单工厂 -->
     <string name="operation_add">加法</string>

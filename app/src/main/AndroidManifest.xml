@@ -47,6 +47,9 @@
         <activity android:name=".designpattern.prototype.PrototypeActivity">
         </activity>
 
+        <activity android:name=".designpattern.template.TemplateActivity">
+        </activity>
+
     </application>
 
 </manifest>

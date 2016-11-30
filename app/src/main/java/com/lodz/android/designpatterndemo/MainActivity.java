@@ -12,6 +12,7 @@ import com.lodz.android.designpatterndemo.designpattern.prototype.PrototypeActiv
 import com.lodz.android.designpatterndemo.designpattern.proxy.dynamicproxy.DynamicProxyActivity;
 import com.lodz.android.designpatterndemo.designpattern.proxy.staticproxy.StaticProxyActivity;
 import com.lodz.android.designpatterndemo.designpattern.strategy.StrategyActivity;
+import com.lodz.android.designpatterndemo.designpattern.template.TemplateActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -51,6 +52,11 @@ public class MainActivity extends BaseActivity {
     /** 原型模式 */
     @BindView(R.id.prototype_pattern_button)
     Button mPrototypePatternButton;
+
+    /** 模版方法模式 */
+    @BindView(R.id.template_method_pattern_button)
+    Button mTemplateMethodPatternButton;
+
 
     @Override
     protected int getLayoutId() {
@@ -118,6 +124,13 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 PrototypeActivity.start(MainActivity.this);
+            }
+        });
+
+        mTemplateMethodPatternButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TemplateActivity.start(MainActivity.this);
             }
         });
     }
