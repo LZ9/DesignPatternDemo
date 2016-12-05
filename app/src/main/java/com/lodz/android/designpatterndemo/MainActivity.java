@@ -5,6 +5,7 @@ import android.widget.Button;
 
 import com.lodz.android.designpatterndemo.base.BaseActivity;
 import com.lodz.android.designpatterndemo.designpattern.decorator.DecoratorActivity;
+import com.lodz.android.designpatterndemo.designpattern.facade.FacadeActivity;
 import com.lodz.android.designpatterndemo.designpattern.factory.abstractfactory.AbstractFactoryActivity;
 import com.lodz.android.designpatterndemo.designpattern.factory.factorymethod.FactoryMethodActivity;
 import com.lodz.android.designpatterndemo.designpattern.factory.simplefactory.SimpleFactoryActivity;
@@ -56,6 +57,11 @@ public class MainActivity extends BaseActivity {
     /** 模版方法模式 */
     @BindView(R.id.template_method_pattern_button)
     Button mTemplateMethodPatternButton;
+
+    /** 外观模式 */
+    @BindView(R.id.facade_pattern_button)
+    Button mFacadePatternButton;
+
 
 
     @Override
@@ -131,6 +137,13 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 TemplateActivity.start(MainActivity.this);
+            }
+        });
+
+        mFacadePatternButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FacadeActivity.start(MainActivity.this);
             }
         });
     }

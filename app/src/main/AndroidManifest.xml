@@ -50,6 +50,9 @@
         <activity android:name=".designpattern.template.TemplateActivity">
         </activity>
 
+        <activity android:name=".designpattern.facade.FacadeActivity">
+        </activity>
+
     </application>
 
 </manifest>
