@@ -53,6 +53,9 @@
         <activity android:name=".designpattern.facade.FacadeActivity">
         </activity>
 
+        <activity android:name=".designpattern.builder.BuilderActivity">
+        </activity>
+
     </application>
 
 </manifest>
