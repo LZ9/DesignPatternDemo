@@ -20,10 +20,10 @@ import butterknife.ButterKnife;
 
 public class FactoryMethodActivity extends BaseActivity{
 
-    /** 创建学生雷锋 */
+    /** 奥迪 */
     @BindView(R.id.audi_button)
     Button mAudiButton;
-    /** 创建志愿者雷锋 */
+    /** 法拉利 */
     @BindView(R.id.ferrari_button)
     Button mFerrariButton;
 
